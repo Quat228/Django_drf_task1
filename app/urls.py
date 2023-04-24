@@ -4,6 +4,6 @@ from . import views
 
 
 urlpatterns = [
-    path('category/', views.CategoryListCreateAPIView.as_view(), name="category"),
-    path('product/', views.ProductListCreateAPIView.as_view(), name="product")
+    path('category/', views.category_list_create_api_view, name="category"),
+    path('product/', views.product_list_create_api_view, name="product")
 ]
